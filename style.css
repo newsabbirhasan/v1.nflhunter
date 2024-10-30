@@ -5,7 +5,9 @@ html {
 body {
     position: relative;
     height: 100%;
-    background: linear-gradient(#242625 25%, #303133 50%, #303133 50%, #242625 100%);
+     background-color: #0000008;
+    background-repeat: repeat;
+    background-image: url(https://cdn.live-nhl.com/media-resources/other/bodybg_live-nhl.v1.jpg)!important;
     color: #a4a8a4;
     font-size: 14px;
     font-family: "Inter", sans-serif
@@ -13,7 +15,8 @@ body {
 
 a {
     transition: all .3s;
-    color: #b1b4b1
+    color: #b1b4b1;
+    font-size: 25px;
 }
 
 a:hover {
@@ -21,8 +24,8 @@ a:hover {
 }
 
 strong {
-    font-weight: 500;
-    color: #00acc1
+    font-weight: 400;
+    color: #fff
 }
 
 .container {
@@ -42,10 +45,6 @@ strong {
     position: relative;
     z-index: 1;
     margin: 0 2rem
-}
-
-.content .header img {
-    height: 2rem
 }
 
 .content .header p {
@@ -72,7 +71,8 @@ strong {
     margin: 1rem 0
 }
 
-.content .main ul.m-list li a {
+.content .main ul.m-list li {
+    cursor: pointer;
     display: flex;
     justify-content: space-between;
     background: #242625;
@@ -85,18 +85,23 @@ strong {
     transition: border-color .3s, background .3s
 }
 
-.content .main ul.m-list li a span:first-child {
+.content .main ul.m-list li span:first-child {
     font-weight: 600;
     color: #e5e5e5
 }
 
-.content .main ul.m-list li a span:last-child {
+.faq img {
+    margin: 0 auto;
+    display: block;
+}
+
+.content .main ul.m-list li span:last-child {
     display: inline-block;
     align-items: center;
     transition: color .3s
 }
 
-.content .main ul.m-list li a span:last-child:before {
+.content .main ul.m-list li span:last-child:before {
     content: " ";
     display: inline-block;
     background: #00acc1;
@@ -107,12 +112,12 @@ strong {
     margin-right: .3rem
 }
 
-.content .main ul.m-list li a:hover {
+.content .main ul.m-list li:hover {
     background: #003a42;
     border-color: #00acc1
 }
 
-.content .main ul.m-list li a:hover span:last-child {
+.content .main ul.m-list li:hover span:last-child {
     color: #e5e5e5
 }
 
@@ -229,5 +234,12 @@ strong {
 @media(max-height: 350px) {
     .wrap {
         perspective: 210px
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .faq img {
+        width: 100%;
+        height: auto;
     }
 }
