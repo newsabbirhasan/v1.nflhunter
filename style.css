@@ -7,7 +7,7 @@ body {
     height: 100%;
      background-color: #0000008;
     background-repeat: repeat;
-background-image: url('https://nflhunter.com/wp-content/uploads/2022/10/stripe.png');
+    background-image: url(/wp-content/uploads/2023/08/grid-pattern.png)!important
     color: #a4a8a4;
     font-size: 14px;
     font-family: "Inter", sans-serif
